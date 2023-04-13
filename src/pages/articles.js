@@ -49,8 +49,11 @@ const MovingImage = ({ title, img, link }) => {
 
 const FeaturedArticle = ({ time, title, summary, img, link }) => {
   return (
-    <li className="col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl relative">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl" />
+    <li
+      className="col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl relative
+    dark:bg-dark dark:border-light"
+    >
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light" />
       <Link
         href={link}
         target="_blank"
@@ -70,7 +73,9 @@ const FeaturedArticle = ({ time, title, summary, img, link }) => {
         </h2>
       </Link>
       <p className="text-sm mb-2">{summary}</p>
-      <span className="text-primary font-semibold">{time}</span>
+      <span className="text-primary font-semibold dark:text-primaryDark">
+        {time}
+      </span>
     </li>
   )
 }
@@ -82,10 +87,13 @@ const Article = ({ title, date, img, link }) => {
       whileInView={{ y: 0, transition: { duration: 0.5, ease: "easeInOut" } }}
       viewport={{ once: true }}
       className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between
-    bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4"
+    bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4
+    dark:border-light dark:bg-dark dark:text-light"
     >
       <MovingImage title={title} img={img} link={link} />
-      <span className="text-primary font-semibold pl-4">{date}</span>
+      <span className="text-primary font-semibold pl-4 dark:text-primaryDark">
+        {date}
+      </span>
     </motion.li>
   )
 }
@@ -97,7 +105,7 @@ const articles = () => {
         <title>Vivi Tian | Articles Page</title>
         <meta name="description" content="Vivi Tian, Github: vivitian930." />
       </Head>
-      <main className="w-full flex flex-col items-center justify-center overflow-hidden">
+      <main className="w-full flex flex-col items-center justify-center overflow-hidden dark:text-light">
         <Layout className="pt-16">
           <AnimatedText text="Words Can Change The World!" className="mb-16" />
           <ul className="grid grid-cols-2 gap-16">
