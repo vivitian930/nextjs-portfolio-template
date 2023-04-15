@@ -3,6 +3,7 @@ import Education from "@/components/Education"
 import Experience from "@/components/Experience"
 import Layout from "@/components/Layout"
 import Skills from "@/components/Skills"
+import TransitionEffect from "@/components/TransitionEffect"
 import { motion, useInView, useMotionValue, useSpring } from "framer-motion"
 import Head from "next/head"
 import Image from "next/image"
@@ -41,6 +42,7 @@ const about = () => {
         <title>Vivi Tian | About Page</title>
         <meta name="description" content="Vivi Tian, Github: vivitian930." />
       </Head>
+      <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText

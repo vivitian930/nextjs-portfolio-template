@@ -1,6 +1,7 @@
 import AnimatedText from "@/components/AnimatedText"
 import { GithubIcon } from "@/components/icons"
 import Layout from "@/components/Layout"
+import TransitionEffect from "@/components/TransitionEffect"
 import { motion } from "framer-motion"
 import Head from "next/head"
 import Image from "next/image"
@@ -157,6 +158,7 @@ const projects = () => {
         <title>Vivi Tian | Projects Page</title>
         <meta name="description" content="Vivi Tian, Github: vivitian930." />
       </Head>
+      <TransitionEffect />
       <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
