@@ -1,5 +1,6 @@
 import AnimatedText from "@/components/AnimatedText"
 import Layout from "@/components/Layout"
+import TransitionEffect from "@/components/TransitionEffect"
 import { motion, useMotionValue } from "framer-motion"
 import Head from "next/head"
 import Image from "next/image"
@@ -116,6 +117,7 @@ const articles = () => {
         <title>Vivi Tian | Articles Page</title>
         <meta name="description" content="Vivi Tian, Github: vivitian930." />
       </Head>
+      <TransitionEffect />
       <main className="w-full flex flex-col items-center justify-center overflow-hidden dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
