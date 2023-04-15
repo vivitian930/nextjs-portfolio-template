@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [standa
 
 # Changelog
 
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+# Changelog
+
 ## [Unreleased](https://github.com/vivitian930/nextjs-portfolio/tree/HEAD)
 
 [Full Changelog](https://github.com/vivitian930/nextjs-portfolio/compare/e9cf69189136dcce31beef58bef478852d186609...HEAD)
